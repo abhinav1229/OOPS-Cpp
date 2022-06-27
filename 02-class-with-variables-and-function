@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+	// These member variables can be accessed by anyfunction.
+	public:
+		int studId;
+		string studName;
+		
+		// methods to initialize the data member
+		void setData(int i, string n)
+		{
+			// i should be different from studId, 
+			// n should be different from studName
+			
+			studId = i;
+			studName = n;
+		}
+		
+		
+		// showing the data 
+		void showData()
+		{
+			cout << studId << studName << "\n\n";
+		}
+};
+
+int main()
+{
+	// Creating a student object
+	Student S1;
+	
+	//Initializing the student S1
+	S1.studId = 1234;
+	S1.studName = "Abhinav";
+	
+	//printing output
+	cout << S1.studId << " " << S1.studName << "\n"; 
+	
+	// Creating another student object
+	Student s2;
+	s2.setData(123, "Mukesh");
+	s2.showData();
+	
+	
+	return 0;
+}
