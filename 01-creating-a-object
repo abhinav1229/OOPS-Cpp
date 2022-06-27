@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+	// These member variables can be accessed by anyfunction.
+	public:
+		int studId;
+		string studName;
+
+};
+
+int main()
+{
+	// Creating a student object
+	Student S1;
+	
+	//Initializing the student S1
+	S1.studId = 1234;
+	S1.studName = "Abhinav";
+	
+	//printing output
+	cout << S1.studId << " " << S1.studName; 
+	return 0;
+}
